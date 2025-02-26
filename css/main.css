@@ -1,29 +1,28 @@
 /* Estilos básicos */
 body {
 	font-family: Arial, sans-serif;
-	background-color: #2e485a;
+	background-color: #f9f9e2;
 	margin: 0;
 	padding: 0;
 }
 
 h1 {
-    color: greenyellow;
-    font-weight: bolder;
-    font-size: 5rem;
+    color: rgb(162, 194, 0);
+    font-weight: 100;
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h2 {
-    color: beige;
-    font-weight: bold;
-    font-size: 3.5rem;
+    color: rgb(27, 27, 8);
+    font-weight:200;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 h3 {
 	color: #333;
-}
-
-p {
-    color: whitesmoke;
-    font-size: 2rem;
 }
 
 header {
@@ -36,8 +35,9 @@ section {
     color:yellowgreen;
 }
 
-#inicio {
-    font-weight: bolder;
-    color: red;
-}
 
+nav {
+    font-size:medium;
+    color: azure;
+    text-align:left;
+}
