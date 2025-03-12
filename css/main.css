@@ -1,51 +1,106 @@
-/* Estilos básicos */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9e2;
+  font-family: "Nunito Sans", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  color: rgb(162, 194, 0);
-  font-weight: 100;
-  font-size: 3.5rem;
-  text-align: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-h2 {
-  color: rgb(27, 27, 8);
-  font-weight: 200;
-  font-size: 1.5rem;
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-h3 {
+  background-color: #f4f4f4;
   color: #333;
 }
 
-header {
-  color: burlywood;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-}
-section {
-  color: yellowgreen;
+h1,
+h3,
+h4,
+h2 {
+  color: #333;
+  font-weight: 700;
 }
 
-nav {
-  font-size: medium;
-  color: azure;
-  text-align: left;
-}
-.contenedor {
+.header {
+  background-color: #0c472c;
+  color: white;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.item {
-  flex: 1;
+
+.header .logo h1 {
+  margin: 0;
+  font-size: 2em;
+  display: inline-block;
+  color: #fff;
+}
+
+.header .logo i {
+  color: #ff5733;
+  font-size: 2em;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navigation ul li {
+  margin: 0 20px;
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
   padding: 10px;
-  background-color: lightblue;
+  transition: background-color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.content-section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h3,
+.content-section h4 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-top: 20px;
 }

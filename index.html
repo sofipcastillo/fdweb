@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <link
       rel="icon"
@@ -23,48 +23,50 @@
     <link rel="stylesheet" href="css/index.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mi nueva pagina</title>
-    <meta
-      name="description"
-      content="Aprende HTML y desarrollo web con las mejores prácticas."
-    />
-    <meta
-      name="keywords"
-      content="HTML, CSS, desarrollo web, SEO, accesibilidad"
-    />
-    <meta name="author" content="Tu Nombre" />
+    <title>Mi Nueva Página</title>
+    <meta name="author" content="Sofia" />
     <meta name="robots" content="index, follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
 
   <body>
-    <header>
-      <h1>Mi Página Web</h1>
-      <h2>Esta es una prueba de clase</h2>
-      <nav>
+    <header class="header">
+      <div class="logo">
+        <h1>Mi Página Web</h1>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <nav class="navigation">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><a href="sofipcastillo@gmail.com">Escribeme</a></li>
-          <li><a href="638403841">Telefono</a></li>
-          <li>
-            <a
-              target="_blank"
-              href="https://es.search.yahoo.com/?fr2=p:fprd,mkt:es"
-            ></a>
-          </li>
+          <li><a href="mailto:sofipcastillo@gmail.com">Escríbeme</a></li>
+          <li><a href="tel:+638403841">Teléfono</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="inicio">
-        <h3>sobre mi</h3>
-        <p>me llamo sofia piedrahita.</p>
+      <section id="inicio" class="content-section">
+        <h3>Sobre mí</h3>
+        <p>Me llamo Sofía Piedrahita. Una gran hacker.</p>
         <img
+          class="responsive-img"
           src="./assets/images/caption.jpg"
-          width="400"
-          height="200"
-          alt="cuatro platos coloridos con comida"
+          alt="Cuatro platos coloridos con comida"
         />
         <video controls>
           <source src="./assets/video/video.mp4" type="video/mp4" />
@@ -72,13 +74,13 @@
         </video>
       </section>
 
-      <section id="contacto">
+      <section id="contacto" class="content-section">
         <h4>Sobre nosotros</h4>
-        <p>informacion importante.</p>
+        <p>Información importante.</p>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>&copy; 2025 Mi Web</p>
     </footer>
   </body>
