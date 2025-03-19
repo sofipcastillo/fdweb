@@ -11,11 +11,11 @@ h3,
 h4,
 h2 {
   color: #333;
-  font-weight: 700;
+  font-weight: 200;
 }
 
 .header {
-  background-color: #0c472c;
+  background-color: #0c1147;
   color: white;
   padding: 20px 0;
   display: flex;
@@ -25,7 +25,8 @@ h2 {
 }
 
 .header .logo h1 {
-  margin: 0;
+  margin: 5px;
+  margin-left: 25px;
   font-size: 2em;
   display: inline-block;
   color: #fff;
@@ -42,8 +43,7 @@ h2 {
   padding: 0;
   display: flex;
 }
-
-.navigation ul li {
+1 .navigation ul li {
   margin: 0 20px;
 }
 
@@ -56,7 +56,7 @@ h2 {
 }
 
 .navigation ul li a:hover {
-  background-color: #333;
+  background-color: #da3a3a;
   border-radius: 5px;
 }
 
@@ -70,6 +70,7 @@ h2 {
 
 .content-section h3,
 .content-section h4 {
+  font-family: Roboto;
   font-size: 1.8em;
   color: #333;
 }
@@ -90,7 +91,7 @@ h2 {
 }
 
 .footer p {
-  margin: 0;
+  margin: 5;
 }
 
 a {
