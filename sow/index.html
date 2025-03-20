@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--imagen favicon-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/icons/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/icons/favicon/favicon.svg"
+    />
+    <link rel="manifest" href="./assets/icons/favicon/site.webmanifest" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Nueva Página</title>
+    <meta name="author" content="Sofia" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- tipografia nunito sans-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tipografia roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <input type="checkbox" id="theme-toggle" hidden />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>Mi Página Web</h1>
+        <i class="fa-solid fa-heart"></i>
+        <div class="theme"></div>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="mailto:sofipcastillo@gmail.com">Escríbeme</a></li>
+          <li><a href="tel:+638403841">Teléfono</a></li>
+        </ul>
+      </nav>
+      <label for="theme-toggle" class="theme-toggle-button">Toggle Theme</label>
+    </header>
+
+    <main>
+      <section id="inicio" class="content-section">
+        <h3>Sobre mí</h3>
+
+        <p>Me llamo Sofía Piedrahita. Una gran hacker.</p>
+
+        <h4>Esto es una prueba</h4>
+        <img
+          class="responsive-img"
+          src="./assets/images/caption.jpg"
+          alt="Cuatro platos coloridos con comida"
+        />
+        <video controls>
+          <source src="./assets/video/video.mp4" type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </section>
+
+      <section id="contacto" class="content-section">
+        <h4>Sobre nosotros</h4>
+        <p>Información importante.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Mi Web</p>
+    </footer>
+  </body>
+</html>
