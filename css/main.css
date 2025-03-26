@@ -1,23 +1,28 @@
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: --black;
+  color: --black;
 }
 
-h1,
+h1 {
+  color: --card;
+  font-family: poppins;
+}
+
+h2,
 h3,
-h4,
-h2 {
-  color: var(--black);
-  font-weight: 400;
+h4 {
+  font-family: poppins;
+  font-weight: 500;
+  color: --black;
 }
 
 .header {
-  background-color: var(--primary);
-  color: (--primary);
-  padding: 20px 0;
+  background-color: --black;
+  color: --background;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,16 +30,15 @@ h2 {
 }
 
 .header .logo h1 {
-  margin: 5px;
-  margin-left: 25px;
-  font-size: 2em;
+  font-size: 1.8em;
+  margin: 0;
   display: inline-block;
-  color: #fff;
 }
 
 .header .logo i {
-  color: #ff5733;
-  font-size: 2em;
+  color: --card;
+  font-size: 1.5em;
+  margin-left: 10px;
 }
 
 .navigation ul {
@@ -43,65 +47,50 @@ h2 {
   padding: 0;
   display: flex;
 }
-.navigation ul li {
-  margin: 0 20px;
+
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.navigation ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.navigation ul li a:hover {
-  background-color: #da3a3a;
-  border-radius: 5px;
-}
-
-.content-section {
-  background-color: var(--background);
+.article {
+  background-color: --background;
   padding: 20px;
-  margin: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.content-section h3,
-.content-section h4 {
-  font-family: Roboto;
-  font-size: 1.8em;
-  color: var(--black);
+.article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.responsive-img {
+.article i {
+  font-size: 2em;
+  color: --card;
+  margin-bottom: 10px;
+}
+
+.article h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-family: poppins;
+  font-size: 1em;
+  color: --black;
+}
+
+.article img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-top: 20px;
-}
-
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-.footer p {
-  margin: 5;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-video {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
