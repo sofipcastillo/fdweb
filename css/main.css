@@ -3,10 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Anton", sans-serif;
-  background-color: rgb(255, 246, 183);
+  background-color: rgb(0, 0, 0);
 }
 
-/* Galería de imágenes */
 .image-gallery {
   display: flex;
   justify-content: center;
@@ -23,7 +22,6 @@
   border-radius: 5px;
 }
 
-/* Sección principal */
 .hero {
   text-align: center;
   padding: 50px 20px;
@@ -39,41 +37,37 @@
   font-weight: 900;
   letter-spacing: -3px;
   line-height: 0.8;
-  color: rgb(196, 85, 41);
+  color: rgb(255, 255, 255);
 }
 
-/* Subtítulo agregado */
 .hero h2 {
   font-size: 3vw;
   font-weight: 400;
-  color: rgb(77, 28, 8);
+  color: rgb(222, 222, 222);
   margin-top: 10px;
 }
 
-/* Contenido principal */
 .content {
   padding: 40px 20px;
   max-width: 900px;
   margin: auto;
 }
 
-/* Tarjetas de análisis */
 .article {
-  background-color: rgb(255, 236, 173); /* Fondo amarillo claro */
+  background-color: rgb(0, 0, 0);
   padding: 20px;
   margin-bottom: 40px;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px rgba(235, 255, 214, 0.2);
   transition: transform 0.3s ease-in-out;
   text-align: center;
-  border: 1px solid rgb(196, 85, 41); /* Borde delgado */
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .article:hover {
   transform: translateY(-5px);
 }
 
-/* Espacio para imágenes dentro de la tarjeta */
 .article .image-container {
   width: 100%;
   display: flex;
@@ -82,23 +76,21 @@
 }
 
 .article .image-container img {
-  width: 700px; /* Tamaño más grande y proporcionado */
+  width: 700px;
   height: 350px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-/* Estilos del título dentro de cada análisis */
 .article h2 {
   font-size: 24px;
   font-family: "Anton";
-  color: rgb(196, 85, 41);
+  color: rgb(255, 255, 255);
   margin-bottom: 10px;
 }
 
-/* Texto del análisis */
 .article p {
   font-size: 16px;
   line-height: 1.6;
-  color: rgb(77, 28, 8);
+  color: rgb(255, 255, 255);
 }
