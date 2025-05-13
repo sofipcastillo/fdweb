@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error 404</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .error-page {
+        position: relative;
+        height: 100vh;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        padding-top: 80px;
+        background: black;
+      }
+
+      .error-page h1,
+      .error-page p,
+      .error-page a {
+        background: transparent;
+        z-index: 2;
+      }
+
+      .error-page h1 {
+        font-size: clamp(0.7rem, 7vw + 0.5em, 6rem);
+        font-family: "Gasoek one";
+        white-space: nowrap;
+        letter-spacing: clamp(0.1rem, 2vw + 0.5em, 3rem);
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .error-page .background-image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 70%;
+        z-index: 0;
+        background-image: url("https://ik.imagekit.io/sofipcastillo/IMG_4930.PNG?updatedAt=1746696465514");
+        background-size: contain;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        opacity: 4;
+      }
+
+      .error-page a {
+        margin-top: 80px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-family: "Anton", sans-serif;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+
+      .error-page a:hover {
+        background-color: #ff3cac;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="error-page">
+      <div class="background-image"></div>
+      <h1>ERROR 404</h1>
+      <a href="index.html">VOLVER AL INICIO</a>
+    </section>
+  </body>
+</html>

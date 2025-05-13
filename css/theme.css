@@ -1,54 +1,8 @@
-/* ruvebal.art themes by @ruvebal © 2024 * /
-/* Default Mode */
-/* My Tyrian Purple Mode */
 :root {
-  --toggle-shape: "\25D0"; /* Unicode for filled triangle */
-
-  --black: hsla(318, 15%, 10%, 0.97);
-  --white: hsla(291, 20%, 95%, 0.97);
-
-  --background: hsla(0, 0%, 100%, 0.75); /* #B946AB */
-  --foreground: hsla(285, 6%, 13%, 0.9); /* #FFDC19 */
-
-  --card: hsla(184, 68%, 81%, 0.9); /* #A6369F */
-  --card-foreground: hsla(184, 68%, 81%, 0.9); /* #A6369F */
-
-  --popover: hsla(303, 47%, 39%, 0.8); /* #963590 */
-  --popover-foreground: hsla(50, 90%, 36%, 1); /* #B39909 */
-}
-/* My Tyrian Indigo Mode */
-/*  Reminder: ~ (general sibling combinator)  */
-
-#theme-toggle:checked ~ * {
-  /* Background Colors - INDIGO Tyrian Shellfish */
-  /* Foreground Colors - COMPUND-PURPLE Tyrian Shellfish */
-  --toggle-shape: "\25D1"; /* Outlined Square for Dark Mode */
-
-  --black: hsla(318, 15%, 10%, 0.97);
-  --white: hsla(291, 20%, 95%, 0.97);
-
-  --background: hsla(0, 0%, 100%, 0.75); /* #B946AB */
-  --foreground: hsla(285, 6%, 13%, 0.9); /* #FFDC19 */
-
-  --card: hsla(184, 68%, 81%, 0.9); /* #A6369F */
-  --card-foreground: hsla(184, 68%, 81%, 0.9); /* #A6369F */
-
-  --popover: hsla(303, 47%, 39%, 0.8); /* #963590 */
-  --popover-foreground: hsla(50, 90%, 36%, 1); /* #B39909 */
-}
-
-/* Toggle Button Styling */
-.theme-toggle-button {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  color: var(--foreground);
-  background-color: var(--background);
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.theme-toggle-button:before {
-  content: var(--toggle-shape);
+  --color-bg: #000;
+  --color-text: #fff;
+  --color-accent: #ff3cac;
+  --color-accent-hover: #ff2aa5;
+  --color-card-bg: #1e1e1e;
+  --color-shadow: rgba(255, 60, 172, 0.1);
 }
